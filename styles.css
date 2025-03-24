@@ -1,0 +1,178 @@
+/* Google Fonts */
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 56px;
+  }
+  
+  /* Logo Styles */
+  .logo {
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .logo:hover {
+    transform: rotate(360deg);
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.9) !important;
+  }
+  
+  .nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0d6efd;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  /* Carousel Styles */
+  .carousel-item {
+    height: 80vh;
+  }
+  
+  .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    filter: brightness(0.8);
+  }
+  
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  
+  .carousel-item.active .carousel-caption {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  /* Typography Classes */
+  .font-serif {
+    font-family: Georgia, serif;
+  }
+  
+  .font-sans {
+    font-family: Arial, sans-serif;
+  }
+  
+  .font-display {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  }
+  
+  /* Card Hover Effects */
+  .card {
+    transition: all 0.5s ease;
+    overflow: hidden;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,0.2),
+      transparent
+    );
+    transition: 0.5s;
+  }
+  
+  .card:hover::before {
+    left: 100%;
+  }
+  
+  /* Form Styles */
+  .form-control {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+  }
+  
+  .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    transform: translateY(-2px);
+  }
+  
+  /* Button Animation */
+  .btn {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  .btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+  }
+  
+  .btn:active::after {
+    width: 200%;
+    height: 200%;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .carousel-item {
+      height: 50vh;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+    }
+  }
+  
+  /* Section Transitions */
+  section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+  }
+  
+  section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
