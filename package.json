@@ -16,6 +16,8 @@
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
-    "masonry-layout": "^4.2.2"
+    "masonry-layout": "^4.2.2",
+    "imagesloaded": "^5.0.0",
+    "gsap": "^3.12.5"
   }
 }

@@ -1,239 +1,470 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creative Design Studio</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- AOS Animation Library -->
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-  </head>
-  <body>
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <img src="image.png" alt="Mahesh Studio Logo" class="logo me-2" width="40" height="40">
-          <span>Mahesh Studio</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#typography">Typography</a></li>
-            <li class="nav-item"><a class="nav-link" href="#showcase">Showcase</a></li>
-            <li class="nav-item"><a class="nav-link" href="#tools">Tools</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <div class="logo-container me-2">
+                    <div class="logo-circle">
+                        <span class="logo-text">CS</span>
+                    </div>
+                </div>
+                <span class="brand-text">CreativeStudio</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#typography">Typography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#designs">Designs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tools">Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="min-vh-100 d-flex align-items-center">
-      <div class="container">
-        <!-- Carousel -->
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
         <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
-          </div>
-          <div class="carousel-inner rounded-4 shadow" data-aos="fade-up">
-            <div class="carousel-item active">
-              <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg" class="d-block w-100" alt="Design">
-              <div class="carousel-caption">
-                <h1 class="animate__animated animate__fadeInDown">Welcome to Mahesh Studio</h1>
-                <p class="animate__animated animate__fadeInUp">Creating beautiful designs that inspire</p>
-              </div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
             </div>
-            <div class="carousel-item">
-              <img src="https://images.pexels.com/photos/261662/pexels-photo-261662.jpeg" class="d-block w-100" alt="Typography">
-              <div class="carousel-caption">
-                <h1 class="animate__animated animate__fadeInDown">Typography Excellence</h1>
-                <p class="animate__animated animate__fadeInUp">Crafting stories through letters</p>
-              </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200&h=600&fit=crop" class="d-block w-100" alt="Design">
+                    <div class="carousel-caption">
+                        <h1 class="display-4 fw-bold">Creative Design Studio</h1>
+                        <p class="lead">Where imagination meets innovation</p>
+                        <a href="#contact" class="btn btn-primary btn-lg">Get Started</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200&h=600&fit=crop" class="d-block w-100" alt="Typography">
+                    <div class="carousel-caption">
+                        <h1 class="display-4 fw-bold">Typography Excellence</h1>
+                        <p class="lead">Crafting beautiful typography experiences</p>
+                        <a href="#typography" class="btn btn-primary btn-lg">Explore Fonts</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=1200&h=600&fit=crop" class="d-block w-100" alt="Tools">
+                    <div class="carousel-caption">
+                        <h1 class="display-4 fw-bold">Professional Tools</h1>
+                        <p class="lead">Using cutting-edge design tools</p>
+                        <a href="#tools" class="btn btn-primary btn-lg">View Tools</a>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item">
-              <img src="https://images.pexels.com/photos/326501/pexels-photo-326501.jpeg" class="d-block w-100" alt="Graphics">
-              <div class="carousel-caption">
-                <h1 class="animate__animated animate__fadeInDown">Graphic Design</h1>
-                <p class="animate__animated animate__fadeInUp">Where creativity meets purpose</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- Typography Section -->
     <section id="typography" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-5" data-aos="fade-up">Typography & Scripts</h2>
-        <ul class="nav nav-tabs" id="typographyTabs" role="tablist">
-          <li class="nav-item">
-            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#fonts">Fonts</button>
-          </li>
-          <li class="nav-item">
-            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#scripts">Scripts</button>
-          </li>
-        </ul>
-        <div class="tab-content mt-4">
-          <div class="tab-pane fade show active" id="fonts">
-            <div class="row g-4">
-              <div class="col-md-4" data-aos="flip-left" data-aos-delay="100">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h5 class="card-title">Serif Fonts</h5>
-                    <p class="card-text font-serif">Experience the elegance of serif typography</p>
-                  </div>
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Typography & Scripts</h2>
+            <ul class="nav nav-tabs mb-4 justify-content-center" id="typographyTabs" role="tablist">
+                <li class="nav-item">
+                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#fonts">Fonts</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#scripts">Scripts</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#effects">Effects</button>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="fonts">
+                    <!-- Typography Grid (Previous Content) -->
+                    <div class="typography-grid">
+                        <!-- Previous typography cards remain here -->
+                    </div>
                 </div>
-              </div>
-              <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h5 class="card-title">Sans-Serif Fonts</h5>
-                    <p class="card-text font-sans">Modern and clean sans-serif designs</p>
-                  </div>
+                <div class="tab-pane fade" id="scripts">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3>Custom Scripts</h3>
+                                    <p>Professional scripting solutions for typography</p>
+                                    <div class="code-preview">
+                                        <pre><code>@font-face {
+  font-family: 'CustomFont';
+  src: url('path/to/font.woff2');
+}</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3>Font Loading</h3>
+                                    <p>Optimized font loading strategies</p>
+                                    <div class="code-preview">
+                                        <pre><code>document.fonts.ready.then(() => {
+  // Fonts are loaded
+});</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-md-4" data-aos="flip-left" data-aos-delay="300">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h5 class="card-title">Display Fonts</h5>
-                    <p class="card-text font-display">Stand out with display typography</p>
-                  </div>
+                <div class="tab-pane fade" id="effects">
+                    <!-- Text Effects (Previous Content) -->
+                    <div class="text-effects-container">
+                        <!-- Previous effects remain here -->
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="tab-pane fade" id="scripts">
-            <div class="accordion" id="scriptsAccordion">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                    JavaScript
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#scriptsAccordion">
-                  <div class="accordion-body">
-                    <pre><code>// Sample JavaScript Code
-const greeting = 'Hello, Designer!';</code></pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <!-- Showcase Section -->
-    <section id="showcase" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center mb-5" data-aos="fade-up">Design Showcase</h2>
-        <div class="row" data-masonry='{"percentPosition": true }'>
-          <div class="col-sm-6 col-lg-4 mb-4" data-aos="zoom-in">
-            <div class="card">
-              <img src="https://images.pexels.com/photos/1762851/pexels-photo-1762851.jpeg" class="card-img-top" alt="Design">
+    <!-- Graphic Design Showcase -->
+    <section id="designs" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Design Showcase</h2>
+            <div class="row g-4" data-masonry='{"percentPosition": true}'>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card design-card">
+                        <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=400&h=300&fit=crop" class="card-img-top" alt="Design">
+                        <div class="card-body">
+                            <h5 class="card-title">Brand Identity</h5>
+                            <p class="card-text">Creating unique brand identities</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#designModal">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card design-card">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=400&fit=crop" class="card-img-top" alt="Design">
+                        <div class="card-body">
+                            <h5 class="card-title">Typography Design</h5>
+                            <p class="card-text">Custom typography solutions</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#designModal">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card design-card">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=350&fit=crop" class="card-img-top" alt="Design">
+                        <div class="card-body">
+                            <h5 class="card-title">Print Design</h5>
+                            <p class="card-text">Professional print materials</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#designModal">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="card">
-              <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg" class="card-img-top" alt="Design">
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="card">
-              <img src="https://images.pexels.com/photos/326501/pexels-photo-326501.jpeg" class="card-img-top" alt="Design">
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- Tools Section -->
     <section id="tools" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-5" data-aos="fade-up">Tools & Resources</h2>
-        <div class="row g-4">
-          <div class="col-md-4" data-aos="fade-right">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Design Tools</h5>
-                <p class="card-text">Essential tools for every designer</p>
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toolsModal">Learn More</button>
-              </div>
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Tools & Resources</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 tool-card">
+                        <div class="card-body">
+                            <div class="tool-icon">
+                                <i class="fas fa-pencil-ruler"></i>
+                            </div>
+                            <h5 class="card-title">Design Software</h5>
+                            <p class="card-text">Professional design tools we use</p>
+                            <div class="alert alert-info">
+                                Industry standard tools
+                            </div>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toolsModal">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 tool-card">
+                        <div class="card-body">
+                            <div class="tool-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h5 class="card-title">Resources</h5>
+                            <p class="card-text">Helpful design resources</p>
+                            <div class="alert alert-success">
+                                Updated weekly!
+                            </div>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#resourcesModal">
+                                Browse Resources
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 tool-card">
+                        <div class="card-body">
+                            <div class="tool-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h5 class="card-title">Tutorials</h5>
+                            <p class="card-text">Learn design techniques</p>
+                            <div class="alert alert-warning">
+                                New tutorials added!
+                            </div>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tutorialsModal">
+                                Start Learning
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-4" data-aos="fade-left">
-            <div class="alert alert-info">
-              New resources added weekly!
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center mb-5" data-aos="fade-up">Contact Us</h2>
-        <div class="row">
-          <div class="col-lg-6 mx-auto" data-aos="fade-up" data-aos-delay="100">
-            <form id="contactForm" class="needs-validation" novalidate>
-              <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" required>
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" required>
-              </div>
-              <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="4" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-          </div>
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Contact Us</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <form class="contact-form bg-white p-4 rounded shadow-sm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <select class="form-select" id="subject" required>
+                                <option value="">Choose a subject...</option>
+                                <option value="design">Design Services</option>
+                                <option value="typography">Typography</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-info bg-white p-4 rounded shadow-sm">
+                        <h4 class="mb-4">Connect With Us</h4>
+                        <div class="social-links d-flex gap-3 mb-4">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                        <div class="contact-details">
+                            <div class="mb-3">
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                123 Design Street, Creative City, 12345
+                            </div>
+                            <div class="mb-3">
+                                <i class="fas fa-phone me-2"></i>
+                                (123) 456-7890
+                            </div>
+                            <div class="mb-3">
+                                <i class="fas fa-envelope me-2"></i>
+                                info@creativestudio.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- Modal -->
-    <div class="modal fade" id="toolsModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Design Tools</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body">
-            <ul class="list-group">
-              <li class="list-group-item">Adobe Creative Suite</li>
-              <li class="list-group-item">Figma</li>
-              <li class="list-group-item">Sketch</li>
-            </ul>
-          </div>
+    <!-- Modals -->
+    <!-- Tools Modal -->
+    <div class="modal fade" id="toolsModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Design Tools We Use</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fab fa-adobe me-2"></i>
+                            Adobe Creative Suite
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-pen-nib me-2"></i>
+                            Figma
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-pencil-alt me-2"></i>
+                            Sketch
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-paint-brush me-2"></i>
+                            Canva
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
+
+    <!-- Resources Modal -->
+    <div class="modal fade" id="resourcesModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Design Resources</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-1">Font Collections</h6>
+                                <small class="text-muted">New</small>
+                            </div>
+                            <p class="mb-1">Curated typography resources</p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-1">Design Templates</h6>
+                                <small class="text-muted">Updated</small>
+                            </div>
+                            <p class="mb-1">Professional design templates</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tutorials Modal -->
+    <div class="modal fade" id="tutorialsModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Design Tutorials</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="accordion" id="tutorialsAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    Typography Basics
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#tutorialsAccordion">
+                                <div class="accordion-body">
+                                    Learn the fundamentals of typography design.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    Advanced Design
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#tutorialsAccordion">
+                                <div class="accordion-body">
+                                    Master advanced design techniques.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Design Modal -->
+    <div class="modal fade" id="designModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Design Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=400&h=300&fit=crop" class="img-fluid rounded" alt="Design">
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Project Overview</h4>
+                            <p>Detailed information about the design project and its implementation.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check-circle text-success me-2"></i>Brand Strategy</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i>Visual Design</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i>Implementation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Masonry -->
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <!-- AOS Animation Library -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+    <!-- AOS Animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <script type="module" src="/main.js"></script>
-  </body>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
 </html>
